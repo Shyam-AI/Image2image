@@ -11,3 +11,7 @@
                        thus reducing the model size. 
  # Project flow diagram (Architecture)
  
+<img src="https://github.com/Shyam-AI/image2image/blob/main/images/color_gans.png" width="800px" height="auto">
+
+# Findings:
+           Instead of just adversial learning what we found was if we could pre-train the generator and then train it along with discriminator made massive difference in the quality of output we got from the generator. Used a pretrained ResNet18 as the backbone of  U-Net and to accomplish the second stage of pretraining, we are going to train the U-Net on our training set with only L1 Loss. Then we will move to the combined adversarial and L1 loss.
