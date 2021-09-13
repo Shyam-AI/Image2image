@@ -7,7 +7,7 @@
             In our setting, the generator model takes a grayscale image (1-channel image) and produces a 2-channel image, a channel for *a and another for *b. 
             The discriminator, takes these two produced channels and concatenates them with the input grayscale image and decides whether this new 3-channel image is fake or real.
             
-            # Reason : Using the above mentioned technique, we were able to reduce the number of trainable parameters as we the model has to only learn A and B channel, 
+            # Reason : Using the above mentioned technique, we were able to reduce the number of trainable parameters as  the model has to only learn A and B channel, 
                        thus reducing the model size. 
  # Project flow diagram (Architecture)
  
@@ -22,10 +22,10 @@
 
            ii) Benchmark dataset ( these are the dataset which are available open source )
 
-           Note : for our application we have used coco dataset also tested on ImageNet dataset
+           Note : for our application we have used coco dataset (also tested on ImageNet dataset).
                       
 # Building the generator
-          Here we are using unet over pretrained resnet-34 .Pre-training the generator seems to be giving excellent results better than just the Unet block (used in                         official paper) .
+            Here we are using unet over pretrained resnet-34 .
            Input : The generator takes L channel as the input which is the grayscale image .
            Output : The output from the generator is ab channel.
            
