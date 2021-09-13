@@ -56,3 +56,10 @@
            Built a web app using streamLit.
 # Findings:
            Instead of just adversial learning what we found was if we could pre-train the generator and then train it along with discriminator made massive difference in the quality of output we got from the generator. Used a pretrained ResNet18 as the backbone of  U-Net and to accomplish the second stage of pretraining, we are going to train the U-Net on our training set with only L1 Loss. Then we will move to the combined adversarial and L1 loss.
+
+# Input Image - StreamLit webApp
+<img src="https://github.com/Shyam-AI/image2image/blob/main/images/input-image.jpeg" width="400px" height="auto">
+
+# Output Image - StreamLit webApp
+<img src="https://github.com/Shyam-AI/image2image/blob/main/images/output-image.jpeg" width="400px" height="auto">
+# Note : The generator was pretrained for 10 epochs and the mainModel for 20 epochs . The model gives better quality results when we run more epochs.
